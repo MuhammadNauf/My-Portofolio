@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Muhammad Naufal — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-initials">MN</div>
+        <div>
+          <h1 class="name">Muhammad Naufal</h1>
+          <p class="role">UI/UX Designer · Web Developer · Video Editor</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <a class="btn ghost" href="https://github.com/MuhammadNauf" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn" href="cv.pdf" download>Download CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <p>
+        Saya seorang web developer yang fokus pada desain UI/UX, sistem pemetaan berbasis web,
+        dan pengembangan aplikasi interaktif menggunakan HTML, CSS, JavaScript, dan PHP.
+      </p>
+    </section>
+
+    <section class="projects-grid" id="projectsGrid" aria-label="Daftar proyek">
+      <!-- Cards di-generate oleh script.js -->
+    </section>
+
+    <footer class="site-footer">
+      <div>© <span id="year"></span> Muhammad Naufal</div>
+      <div class="footer-links">
+        <a href="https://github.com/MuhammadNauf" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.tiktok.com/@clipper19951?_r=1&_t=ZS-91GuSJiJFrw" target="_blank" rel="noreferrer">TikTok</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Fullscreen modal -->
+  <div id="projectModal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <header class="modal-header">
+        <div>
+          <h2 id="modalTitle">Project Title</h2>
+          <p id="modalSubtitle" class="muted">Project subtitle</p>
+        </div>
+
+        <div class="modal-controls">
+          <div class="switch">
+            <button id="switchDesktop" class="switch-btn active" title="Desktop view">💻 Desktop</button>
+            <button id="switchMobile" class="switch-btn" title="Mobile view">📱 Mobile</button>
+          </div>
+
+          <a id="externalLink" class="btn danger hidden" target="_blank" rel="noreferrer">Lihat di TikTok</a>
+          <button id="closeModal" class="icon-btn" aria-label="Tutup">✖</button>
+        </div>
+      </header>
+
+      <div class="modal-body" id="modalBody">
+        <!-- mockup content di-inject lewat script.js -->
+      </div>
+
+      <footer class="modal-footer">
+        <div class="muted">Mockup interaktif — hanya preview visual (tidak live)</div>
+        <button class="btn" id="closeModalBottom">Tutup</button>
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
