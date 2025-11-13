@@ -31,9 +31,9 @@ const projects = [
     theme: "thumb-red"
   },
   {
-    id: "clipper",
-    title: "Video Editing — Clipp.ID",
-    subtitle: "Editing promosi & highlight (CapCut) — lihat akun TikTok",
+    id: "Video Editing",
+    title: "Video Editing — Clipp.ID - Riau24Official",
+    subtitle: "Breaking news Editing, Podcast, Youtube, Thumbnail",
     theme: "thumb-blue",
     external: true,
     link: "https://www.tiktok.com/@clipper19951?_r=1&_t=ZS-91GuSJiJFrw"
@@ -282,3 +282,4 @@ yearEl.textContent = new Date().getFullYear();
 document.addEventListener('keydown', (e)=>{
   if(e.key === 'Escape' && modal.classList.contains('show')) hideModal();
 });
+
