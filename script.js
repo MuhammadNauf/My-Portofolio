@@ -106,7 +106,7 @@ function renderDesktopMockup(p) {
       </div>
       <div class="video-wrapper" style="margin:20px auto; display:flex; justify-content:center;">
         <iframe width="560" height="315"
-          src="https://www.youtube.com/embed/9nVgx5Kr0AQ?autoplay=1&mute=1&si=RJJPyaODWVJ1sD7f"
+          src="https://www.youtube.com/watch?v=9nVgx5Kr0AQ"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -128,3 +128,4 @@ function renderDesktopMockup(p) {
 
 // === Tahun otomatis di footer ===
 document.getElementById("year").textContent = new Date().getFullYear();
+
