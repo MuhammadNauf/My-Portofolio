@@ -161,28 +161,27 @@ function renderDesktopMockup(p){
         <div class="info-card">Coverage Map<br><small class="muted">Area Pekanbaru</small></div>
       </div>
     `;
-  } else if (p.id === 'Vidio Editing') {
-  container.innerHTML = `
-    <div class="desktop-title muted">${p.title} — Desktop View</div>
-    <div class="hero-rect" style="background:linear-gradient(135deg,#2563eb,#4f46e5)">
-      Video gallery • Highlights • Promo cuts
-    </div>
-    <div class="video-wrapper" style="margin-top:20px; display:flex; justify-content:center;">
-      <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/9nVgx5Kr0AQ?autoplay=1&mute=1&si=RJJPyaODWVJ1sD7f"
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen>
-      </iframe>
-    </div>
-    <div class="box-grid">
-      <div class="info-card">Promo 30s<br><small class="muted">CapCut edit</small></div>
-      <div class="info-card">Highlight Reel<br><small class="muted">15 clips</small></div>
-      <div class="info-card">Social Link<br><small class="muted">TikTok • YouTube</small></div>
-    </div>
-  `;
-
+  } else if (p.id === 'Video Editing') {
+    container.innerHTML = `
+      <div class="desktop-title muted">${p.title} — Desktop View</div>
+      <div class="hero-rect" style="background:linear-gradient(135deg,#2563eb,#4f46e5)">
+        Video gallery • Highlights • Promo cuts
+      </div>
+      <div class="video-wrapper" style="margin-top:20px; display:flex; justify-content:center;">
+        <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/9nVgx5Kr0AQ?autoplay=1&mute=1&si=RJJPyaODWVJ1sD7f"
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="box-grid">
+        <div class="info-card">Promo 30s<br><small class="muted">CapCut edit</small></div>
+        <div class="info-card">Highlight Reel<br><small class="muted">15 clips</small></div>
+        <div class="info-card">Social Link<br><small class="muted">TikTok • YouTube</small></div>
+      </div>
+    `;
   } else {
     container.innerHTML = `<div class="desktop-title muted">${p.title} — Desktop View</div><div class="hero-rect">Generic preview</div>`;
   }
@@ -237,7 +236,7 @@ function renderMobileMockup(p){
         <div style="background:#111;padding:10px;border-radius:8px">Ticket: #452</div>
       </div>
     `;
-  } else if(p.id === 'clipper'){
+  } else if(p.id === 'Video Editing'){
     container.innerHTML = `
       <div class="mobile-hero" style="background:linear-gradient(135deg,#2563eb,#4f46e5)">Clipp.ID • TikTok</div>
       <div style="margin-top:12px;width:100%">
@@ -294,5 +293,3 @@ yearEl.textContent = new Date().getFullYear();
 document.addEventListener('keydown', (e)=>{
   if(e.key === 'Escape' && modal.classList.contains('show')) hideModal();
 });
-
-
